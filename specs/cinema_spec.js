@@ -66,7 +66,7 @@ describe('Cinema', function () {
 
   it('should be able to calculate total running time of all films', function() {
       const actual = cinema.calculateRunningTimes();
-      assert.strictEqual(actual, true);
+      assert.strictEqual(actual, 622); // Put the zero outside the {}!!!!!!!!!!!!!!!!!!!!!!!!!!
     });
 
 });

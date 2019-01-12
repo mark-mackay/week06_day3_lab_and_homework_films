@@ -32,8 +32,7 @@ Cinema.prototype.allFilmsOverLength = function(length) {
     return answer;
 }
 Cinema.prototype.calculateRunningTimes = function() {
-    const answer = this.films.reduce((total, film) => { return total += film.length, 0}); 
-    console.log("This is the answer:", answer);
+    const answer = this.films.reduce((total, film) => { return total += film.length }, 0);  // Put initial value outside {} ARGGG!!!!
     return answer;
 }
 // Park.prototype.mostVisitedDinosaur = function() {
